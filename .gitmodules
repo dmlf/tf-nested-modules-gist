@@ -1,0 +1,3 @@
+[submodule "modules/tf_vpc"]
+	path = modules/tf_vpc
+	url = git@github.com:dmlf/tf_vpc.git
