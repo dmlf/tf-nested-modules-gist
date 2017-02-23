@@ -1,9 +1,9 @@
-variable "region"  {
+variable "azs"  {
   description = "The AW region."
-  default = "us-west-1"
+  default = ["us-west-2a","us-west-2b"] 
 }
 
-variable "environment" {
+variable "name" {
     default = "uat"
 }
 
@@ -43,5 +43,5 @@ output "vpc_id" {
 }
 
 output "vpc_cidr" {
-  value = "${module.vpc.vpc_cidr}"
+  value = "${var.vpc_cidr}"
 }
